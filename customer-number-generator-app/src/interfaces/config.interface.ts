@@ -5,4 +5,5 @@ export interface Config {
   scope: string;
   region: string;
   port: string;
+  prefix: string;
 }
