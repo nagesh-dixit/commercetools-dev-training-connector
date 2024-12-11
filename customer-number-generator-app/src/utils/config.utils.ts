@@ -14,8 +14,7 @@ export const readConfiguration = () => {
     clientSecret: process.env.CTP_CLIENT_SECRET as string,
     projectKey: process.env.CTP_PROJECT_KEY as string,
     scope: process.env.CTP_SCOPES,
-    region: process.env.CTP_REGION as string,
-    prefix: process.env.PREFIX as string,
+    region: process.env.CTP_REGION as string
   };
 
   const validationErrors = getValidateMessages(envValidators, envVars);

@@ -29,16 +29,6 @@ const envValidators = [
     { min: 32, max: 32 }
   ),
 
-  standardString(
-    ['prefix'],
-    {
-      code: 'InvalidPrefix',
-      message: 'Prefix should be 2 characters.',
-      referencedBy: 'environmentVariables',
-    },
-    { min: 2, max: 2 }
-  ),
-
   standardKey(['projectKey'], {
     code: 'InvalidProjectKey',
     message: 'Project key should be a valid string.',
